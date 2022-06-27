@@ -1,0 +1,22 @@
+﻿/****** Object:  Table [dbo].[FTAAFAMPRO]    Committed by VersionSQL https://www.versionsql.com ******/
+
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[FTAAFAMPRO](
+	[FTAAKY] [nvarchar](20) NOT NULL,
+	[LTAA901MSG] [nvarchar](20) NOT NULL,
+	[FTAAVAL] [nvarchar](250) NULL,
+	[FTAAMT] [decimal](23, 8) NULL,
+	[FTAAORDRE] [nvarchar](3) NULL,
+	[FTAAARGIMP] [nvarchar](20) NULL,
+	[FTAALIB] [nvarchar](60) NULL,
+	[FTAAMODIF] [char](1) NOT NULL,
+	[FTAAACTIF] [char](1) NOT NULL,
+	[FTAASAISIE] [char](1) NOT NULL,
+	[FTAACTRL] [char](1) NOT NULL,
+	[FTAATAAPERE] [nvarchar](20) NULL,
+ CONSTRAINT [PK_FTAAFAMPRO] PRIMARY KEY CLUSTERED 
+(
+	[FTAAKY] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90) ON [PRIMARY]
+) ON [PRIMARY]

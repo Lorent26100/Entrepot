@@ -1,0 +1,42 @@
+﻿/****** Object:  Table [dbo].[F110TARIF]    Committed by VersionSQL https://www.versionsql.com ******/
+
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[F110TARIF](
+	[F110KY] [nvarchar](20) NOT NULL,
+	[F110CODE] [nvarchar](20) NOT NULL,
+	[F110DIRECT] [nvarchar](40) NULL,
+	[F110TRANS] [nvarchar](20) NULL,
+	[L110901NUM] [nvarchar](20) NOT NULL,
+	[F110CDEDIT] [char](1) NOT NULL,
+	[F110HTTTC] [char](1) NOT NULL,
+	[F110FTMN] [decimal](23, 8) NULL,
+	[F110FTHR] [decimal](23, 8) NULL,
+	[F110CDREM] [char](1) NOT NULL,
+	[F110REMMAX] [decimal](23, 8) NULL,
+	[F110EXCLU] [char](1) NOT NULL,
+	[F110EXSEM] [char](7) NULL,
+	[F110DEPSEM] [char](7) NULL,
+	[F110DEPJR] [smallint] NULL,
+	[F110DEPHR] [datetime] NULL,
+	[F110ARRJR] [smallint] NULL,
+	[F110ARRHR] [datetime] NULL,
+	[K110T52DEV] [nvarchar](20) NOT NULL,
+	[K110T53CTY] [nvarchar](20) NULL,
+	[F110ACTIF] [char](1) NOT NULL,
+	[F110TARTO] [char](1) NOT NULL,
+	[K110T35SAI] [nvarchar](20) NULL,
+	[K110001SOC] [nvarchar](20) NULL,
+	[K110030AGE] [nvarchar](20) NULL,
+	[K110033SECT] [nvarchar](20) NULL,
+	[F110TARIFCD] [char](1) NOT NULL,
+	[F110CDREMTIE] [char](1) NOT NULL,
+	[F110CDREMCON] [char](1) NOT NULL,
+	[F110NMFACCON] [char](1) NOT NULL,
+	[F110ORDRE] [smallint] NULL,
+	[F110CATALOGUE] [char](1) NULL,
+ CONSTRAINT [PK_F110TARIF] PRIMARY KEY CLUSTERED 
+(
+	[F110KY] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90) ON [PRIMARY]
+) ON [PRIMARY]

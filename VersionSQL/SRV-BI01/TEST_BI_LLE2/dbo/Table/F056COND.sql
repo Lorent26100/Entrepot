@@ -1,0 +1,26 @@
+﻿/****** Object:  Table [dbo].[F056COND]    Committed by VersionSQL https://www.versionsql.com ******/
+
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[F056COND](
+	[F056050KY] [nvarchar](20) NOT NULL,
+	[F056PERNM] [nvarchar](40) NULL,
+	[F056PERDTD] [datetime] NULL,
+	[F056PERDTF] [datetime] NULL,
+	[F056PERTYP] [nvarchar](20) NULL,
+	[F056PERLIE] [nvarchar](40) NULL,
+	[F056NAIDT] [datetime] NULL,
+	[F056NAILIE] [nvarchar](40) NULL,
+	[F056NAINAT] [nvarchar](20) NULL,
+	[F056PASNM] [nvarchar](40) NULL,
+	[F056PASDTD] [datetime] NULL,
+	[F056PASDTF] [datetime] NULL,
+	[F056PASLIE] [nvarchar](40) NULL,
+	[K056050TIE] [nvarchar](20) NULL,
+	[F056PERPAR] [nvarchar](40) NULL,
+	[F056PASPAR] [nvarchar](40) NULL,
+ CONSTRAINT [PK_F056COND] PRIMARY KEY CLUSTERED 
+(
+	[F056050KY] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90) ON [PRIMARY]
+) ON [PRIMARY]

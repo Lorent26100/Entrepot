@@ -1,0 +1,35 @@
+﻿/****** Object:  Table [dbo].[FT58POS]    Committed by VersionSQL https://www.versionsql.com ******/
+
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[FT58POS](
+	[FT58KY] [nvarchar](20) NOT NULL,
+	[LT58901MSG] [nvarchar](20) NOT NULL,
+	[FT58VAL] [nvarchar](250) NULL,
+	[FT58MT] [decimal](23, 8) NULL,
+	[FT58ORDRE] [nvarchar](3) NULL,
+	[FT58ARGIMP] [nvarchar](20) NULL,
+	[FT58LIB] [nvarchar](60) NULL,
+	[FT58MODIF] [char](1) NOT NULL,
+	[FT58ACTIF] [char](1) NOT NULL,
+	[FT58STOCK] [char](1) NOT NULL,
+	[FT58STOSENS] [char](1) NOT NULL,
+	[FT58OUTDEF] [char](1) NOT NULL,
+	[FT58POSPARC] [char](1) NOT NULL,
+	[FT58POSTIERS] [char](1) NOT NULL,
+	[FT58INV] [char](1) NOT NULL,
+	[FT58INTINV] [char](1) NOT NULL,
+	[FT58FILTRE1] [nvarchar](60) NULL,
+	[FT58FILTRE2] [nvarchar](60) NULL,
+	[FT58MAJAGE] [char](1) NOT NULL,
+	[FT58MAJPOS] [char](1) NULL,
+	[FT58MAJMOT] [char](1) NULL,
+	[FT58INPARC] [char](1) NULL,
+	[KT58T95TYP] [nvarchar](20) NULL,
+	[FT58COULEUR] [nvarchar](20) NULL,
+	[KT58T81TYPVEN] [nvarchar](20) NULL,
+ CONSTRAINT [PK_FT58POS] PRIMARY KEY CLUSTERED 
+(
+	[FT58KY] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90) ON [PRIMARY]
+) ON [PRIMARY]

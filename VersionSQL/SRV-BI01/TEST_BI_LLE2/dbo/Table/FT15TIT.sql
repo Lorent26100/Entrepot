@@ -1,0 +1,21 @@
+﻿/****** Object:  Table [dbo].[FT15TIT]    Committed by VersionSQL https://www.versionsql.com ******/
+
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[FT15TIT](
+	[FT15KY] [nvarchar](20) NOT NULL,
+	[LT15901MSG] [nvarchar](20) NOT NULL,
+	[FT15VAL] [nvarchar](250) NULL,
+	[FT15MT] [decimal](23, 8) NULL,
+	[FT15ORDRE] [nvarchar](3) NULL,
+	[FT15ARGIMP] [nvarchar](20) NULL,
+	[FT15LIB] [nvarchar](60) NULL,
+	[FT15MODIF] [char](1) NOT NULL,
+	[FT15ACTIF] [char](1) NOT NULL,
+	[FT15SIRET] [char](1) NOT NULL,
+	[FT15TAXPRO] [char](1) NOT NULL,
+ CONSTRAINT [PK_FT15TIT] PRIMARY KEY CLUSTERED 
+(
+	[FT15KY] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90) ON [PRIMARY]
+) ON [PRIMARY]

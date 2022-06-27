@@ -1,0 +1,24 @@
+﻿/****** Object:  Table [dbo].[FT07TYP]    Committed by VersionSQL https://www.versionsql.com ******/
+
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[FT07TYP](
+	[FT07KY] [nvarchar](20) NOT NULL,
+	[LT07901MSG] [nvarchar](20) NOT NULL,
+	[FT07VAL] [nvarchar](250) NULL,
+	[FT07MT] [decimal](23, 8) NULL,
+	[FT07ORDRE] [nvarchar](3) NULL,
+	[FT07ARGIMP] [nvarchar](20) NULL,
+	[FT07LIB] [nvarchar](60) NULL,
+	[FT07MODIF] [char](1) NOT NULL,
+	[FT07ACTIF] [char](1) NOT NULL,
+	[KT07368NAT] [nvarchar](20) NULL,
+	[KT07TB1ETAT] [nvarchar](20) NULL,
+	[FT07FILTRE1] [nvarchar](60) NULL,
+	[FT07FILTRE2] [nvarchar](60) NULL,
+	[KT07TP3UNIV] [nvarchar](20) NULL,
+ CONSTRAINT [PK_FT07TYP] PRIMARY KEY CLUSTERED 
+(
+	[FT07KY] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90) ON [PRIMARY]
+) ON [PRIMARY]

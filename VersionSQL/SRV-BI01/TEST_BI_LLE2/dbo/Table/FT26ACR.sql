@@ -1,0 +1,22 @@
+﻿/****** Object:  Table [dbo].[FT26ACR]    Committed by VersionSQL https://www.versionsql.com ******/
+
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+CREATE TABLE [dbo].[FT26ACR](
+	[FT26KY] [nvarchar](20) NOT NULL,
+	[LT26901MSG] [nvarchar](20) NOT NULL,
+	[FT26VAL] [nvarchar](250) NULL,
+	[FT26MT] [decimal](23, 8) NULL,
+	[FT26ORDRE] [nvarchar](3) NULL,
+	[FT26ARGIMP] [nvarchar](20) NULL,
+	[FT26LIB] [nvarchar](60) NULL,
+	[FT26MODIF] [char](1) NOT NULL,
+	[FT26ACTIF] [char](1) NOT NULL,
+	[KT26T25CAT] [nvarchar](20) NULL,
+	[FT26FILTRE1] [nvarchar](60) NULL,
+	[FT26FILTRE2] [nvarchar](60) NULL,
+ CONSTRAINT [PK_FT26ACR] PRIMARY KEY CLUSTERED 
+(
+	[FT26KY] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90) ON [PRIMARY]
+) ON [PRIMARY]

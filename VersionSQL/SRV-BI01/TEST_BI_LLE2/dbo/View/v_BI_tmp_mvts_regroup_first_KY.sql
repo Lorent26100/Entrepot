@@ -1,0 +1,17 @@
+﻿/****** Object:  View [dbo].[v_BI_tmp_mvts_regroup_first_KY]    Committed by VersionSQL https://www.versionsql.com ******/
+
+CREATE VIEW BI_tmp_mvts_regroup_first_KY AS
+SELECT
+R570MVT_first_KY.R570MVT, 
+R570MVT_first_KY.F570KY, 
+F570MVT.K570090UNI, 
+R570MVT_first_KY.nb_vehicules
+FROM
+ (
+  SELECT
+  F570MVT.R570MVT AS R570MVT, (select top 1 F570KY from F570MVT AS sub WHERE SUB.R570MVT = F570MVT.R570MVT ORDER BY F570DTDEP, F570KY) AS F570KY, COUNT (DISTINCT  F570MVT.K570090UNI) AS nb_vehicules
+  FROM
+   F570MVT
+  GROUP BY F570MVT.R570MVT 
+  
+ ) R570MVT_first_KY INNER JOIN  F570MVT ON(  F570MVT.F570KY = R570MVT_first_KY.F570KY )
